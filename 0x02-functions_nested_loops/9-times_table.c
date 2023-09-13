@@ -5,7 +5,7 @@
  *
  * Description: Function iterates from 0 to 9 and prints
  * each multiplication result in the format "X x 9 = Y",
- * where X is the current number being multiplied and Y is the result
+ * where X is the current number being multiplied, and Y is the result
  * of the multiplication.
  */
 void times_table(void)
@@ -31,6 +31,6 @@ void times_table(void)
 				_putchar((product % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
-_putchar('\n');
 }
