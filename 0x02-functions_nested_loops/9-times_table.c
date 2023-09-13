@@ -14,28 +14,23 @@ void times_table(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 10; j++)
+		_putchar('0');
+		for (j = 1; j < 10; j++)
 		{
+			_putchar(',');
+			_putchar(' ');
+
 			product = i * j;
-
-			/* Print the product with appropriate spacing */
-			if (j != 0)
+			if (product <= 9)
 			{
-				_putchar(',');
 				_putchar(' ');
-
-				if (product < 10)
-					_putchar(' ');
 			}
-
-			if (product < 10)
-				_putchar(' ');
 			else
+			{
 				_putchar((product / 10) + '0');
-
-			_putchar((product % 10) + '0');
+				_putchar((product % 10) + '0');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
-
