@@ -2,10 +2,11 @@
 
 /**
  * times_table - Prints the 9 times table from 0 to 9
- * Description: function iterates from 0 to 9 and prints
- * each multiplication
- * result in the format "X x 9 = Y" where X is the current number
- * being multiplied and Y is the result of the multiplication.
+ *
+ * Description: Function iterates from 0 to 9 and prints
+ * each multiplication result in the format "X x 9 = Y",
+ * where X is the current number being multiplied and Y is the result
+ * of the multiplication.
  */
 void times_table(void)
 {
@@ -13,23 +14,28 @@ void times_table(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		_putchar('0');
-		for (j = 1; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
-			_putchar(',');
-			_putchar(' ');
-
 			product = i * j;
-			if (product <= 9)
+
+			/* Print the product with appropriate spacing */
+			if (j != 0)
 			{
+				_putchar(',');
 				_putchar(' ');
+
+				if (product < 10)
+					_putchar(' ');
 			}
+
+			if (product < 10)
+				_putchar(' ');
 			else
-			{
 				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
-			}
+
+			_putchar((product % 10) + '0');
 		}
 		_putchar('\n');
 	}
 }
+
