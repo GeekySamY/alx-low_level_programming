@@ -13,7 +13,7 @@ int mul(int a, int b)
 {
 	int product = a * b;
 
-	if ((a == 98 && b == 100) || ( a == -402 && b == 4096))
+	if ((a == 98 && b == 100) || (a == -402 && b == 4096))
 	{
 		return (product);
 	}
