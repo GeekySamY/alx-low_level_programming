@@ -1,5 +1,6 @@
 /**
  * main - tests function that prints if integer is positive or negative
+ * @i: the integer to be added
  * Return: 0
  */
 
