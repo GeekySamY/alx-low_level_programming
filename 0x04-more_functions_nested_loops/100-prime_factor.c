@@ -21,8 +21,8 @@ int main(void)
 					printf("%ld\n", i);
 					break;
 				}
-				d = n / i;
-				n = d;
+			d = n / i;
+			n = d;
 			}
 		}
 	return (0);
